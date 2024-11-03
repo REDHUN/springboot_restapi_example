@@ -24,6 +24,7 @@ return  repo.findAll();
     }
 
     public JobPost getJob( int postId) {
+
        return repo.findById(postId).orElse(new JobPost());
     }
 
